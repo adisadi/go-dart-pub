@@ -9,5 +9,4 @@ services:
       dockerfile: ./Dockerfile
     volumes: 
       - pub-base:/data
-    ports:
-      - "8080:8080"
+    network_mode: host
