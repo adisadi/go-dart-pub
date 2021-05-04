@@ -1,6 +1,8 @@
 
 # go-dart-pub
-[![Docker Image](https://img.shields.io/docker/pulls/huiyiqun/pub_mirror.svg)](https://hub.docker.com/r/adisadi/go-dart-pub)
+![Docker Pulls](https://img.shields.io/docker/pulls/adisadi1000/go-dart-pub?style=flat-square)
+![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/adisadi1000/go-dart-pub?style=flat-square)
+![Docker Automated build](https://img.shields.io/docker/automated/adisadi1000/go-dart-pub?style=flat-square)
 
 minimal private pub server written in go
 
@@ -23,7 +25,7 @@ And then commands like `pub get`,`pub publish` and `pub upgrade` would work, sea
 as a docker image by:
 
 ```bash
-$ docker pull adisadi/go-dart-pub
+$ docker pull adisadi1000/go-dart-pub
 ```
 
 docker compose:
@@ -73,7 +75,7 @@ dependencies:
     version: ^1.0.0
 ```
 
-However, you might also consider:
+## However, you might also consider:
 * Using a reverse proxy for https, oauth etc...
 
 
