@@ -3,10 +3,7 @@ volumes:
   pub-base:
 services:
   godartpub:
-    image: godartpub
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+    image: adisadi1000/go-dart-pub:latest
     volumes: 
       - pub-base:/data
     ports:
