@@ -1,0 +1,13 @@
+version: '3.4'
+volumes: 
+  pub-base:
+services:
+  godartpub:
+    image: godartpub
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes: 
+      - pub-base:/data
+    ports:
+      - "8080:8080"

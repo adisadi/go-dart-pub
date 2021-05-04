@@ -1,0 +1,12 @@
+upload 
+
+curl -F "file=@redux-5.0.0.tar.gz;filename=redux-5.0.0.tar.gz" localhost:8080/api/packages/versions/newUpload
+curl -F "file=@redux-4.0.0+3.tar.gz;filename=redux-4.0.0+3.tar.gz" localhost:8080/api/packages/versions/newUpload
+curl -F "file=@string_scanner-1.1.0.tar.gz;filename=string_scanner-1.1.0.tar.gz" localhost:8080/api/packages/versions/newUpload
+
+get package versions
+
+wget -qO - localhost:8080/api/packages/redux
+
+wget -O output.json localhost:8080/api/packages/redux
+wget -O output.json localhost:8080/api/packages/string_scanner
