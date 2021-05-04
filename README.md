@@ -6,8 +6,8 @@ minimal private pub server written in go
 `go-dart-pub` is a bare-minimum implementation of the Pub server API (https://github.com/dart-lang/pub/blob/master/doc/repository-spec-v2.md).
 It stores the packages in Filsystem
 
-For example, if you set up `hello` to mirror `https://github.com/hello/foo`, then
-you can include `package:hello` in your own packages, provided that you set up
+For example, if you set up `testdriver` 'publish_to: http://localhost:8080' , then
+you can include `package:testdriver` in your own packages, provided that you set up
 Pub correctly (either via `PUB_HOSTED_URL`, or explicit `hosted` dependencies.)
 
 ```bash
@@ -21,7 +21,7 @@ And then commands like `pub get`,`pub publish` and `pub upgrade` would work, sea
 as a docker image by:
 
 ```bash
-$ docker pull huiyiqun/pub_mirror
+$ docker pull todo
 ```
 
 ## Usage
@@ -50,7 +50,7 @@ However, you might also consider:
 * Using a reverse proxy
 
 
-Pub Custom Auth discussion
+Pub Custom Auth discussion:
     https://github.com/dart-lang/pub-dev/issues/4671
 
 
