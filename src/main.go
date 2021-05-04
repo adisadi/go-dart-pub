@@ -20,6 +20,7 @@ func main() {
 
 	r.Use(location.New(location.Config{
 		Headers: location.Headers{Scheme: "X-Forwarded-Proto", Host: "X-Forwarded-Host"},
+		Scheme:"http"
 	}))
 
 	r.GET("/", func(c *gin.Context) {
