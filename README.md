@@ -6,6 +6,14 @@
 
 minimal private pub server written in go
 
+the indention of this project is a minimal microservice private pub server.
+Just a a package repo, no auth no blingbling.
+
+if you want tls, put it behind a reverse proxy.
+if you want auth, solve it in a proxy.
+if you want an other filesystem, solve it on infrastructure level (aws,blob storage, ..what ever)
+if you want package statistics, solve it ...i think you got it, not here!.
+
 ## How it works
 `go-dart-pub` is a bare-minimum implementation of the [Pub server API](https://github.com/dart-lang/pub/blob/master/doc/repository-spec-v2.md).
 Filesystem is used as Storage.
@@ -31,6 +39,7 @@ $ docker pull adisadi1000/go-dart-pub
 docker compose:
 
 ```bash
+# see docker-compose.yml in repo
 $ docker-compose up -d
 ```
 
@@ -38,7 +47,7 @@ $ docker-compose up -d
 
 ### Publish
 
-Set the publish_to property in your pubspec to the `serving-url`
+Set the `publish_to` property in your pubspec to the `serving-url`
 
 ```yml
 name: testdrive
